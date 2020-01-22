@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <head>
     <title>DS Portfolio</title>
     <!-- Required meta tags -->
@@ -359,7 +358,7 @@ Responsive
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-bug"></i>
-                    <h4 class="py-3 tred">Bug Fixing</h4>
+                    <p>Bug Fixing</p>
                     <p class="pb-5">Able to debug, find and resolve defects  that prevent correct operation within front end or back end codes</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
@@ -389,7 +388,7 @@ Responsive
             <div class="col-md-2"></div>
 
             <div class="col-md-4 p-0 mb-3">
-                <img class="img-fluid tabl filter" src="images/konsultacijos.PNG"alt="Company IK Consulting website image">
+                <img class="img-fluid tabl filter" src="images/konsultacijos.PNG" alt="Company IK Consulting website image">
                 <h3 class="pl-2 pt-3">IK Consulting</h3>
                 <span class="title pl-2">Client Project</span>
             </div>
@@ -407,7 +406,7 @@ Responsive
             <div class="col-md-2"></div>
 
             <div class="col-md-4 p-0 mb-3">
-                <img class="img-fluid tabl filter" src="images/lotr.png"alt=" College website image">
+                <img class="img-fluid tabl filter" src="images/lotr.png" alt=" College website image">
                 <h3 class="pl-2 pt-3">Review Actors</h3>
                 <span class="title pl-2">College Project</span>
             </div>
@@ -498,4 +497,3 @@ Responsive
         crossorigin="anonymous"></script>
 
 </body>
-</html>
