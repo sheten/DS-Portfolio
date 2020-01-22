@@ -331,43 +331,43 @@ Responsive
         <div class="container">
             <div class="row">
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-html5" aria-hidden="true"></i>
-                    <span class="mt-3 namez">HTML 5</span>
+                    <i class="fa fa-html5" aria-hidden="true"></i></br>
+                    <span class="mt-3 namez"><strong>HTML 5</strong></span>
                     <p class="pb-5">Have advanced understand and ability to write code in HTML</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-css3"></i>
-                    <span class="mt-3 namez">CSS 3</span>
+                    <i class="fa fa-css3"></i></br>
+                    <span class="mt-3 namez"><strongCSS 3</strong></span>
                     <p class="pb-5">Cascading Style Sheet is where I feel like it's must to spend enought time as it is one of main reason why code looks great</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-code"></i>
-                    <span class="mt-3 namez">JavaScript</span>
+                    <i class="fa fa-code"></i></br>
+                    <span class="mt-3 namez"><strong>JavaScript</strong></span>
                     <p class="pb-5">Believe, that for web developer it's one of the most important things to know, so I spend most of my time to improve my JavaScript writing</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-bars"></i>
-                    <span class="mt-3 namez">Bootstrap</span>
+                    <i class="fa fa-bars"></i></br>
+                    <span class="mt-3 namez"><strong>Bootstrap</strong></span>
                     <p class="pb-5">Have built few websites with bootstrap, so already have perception of how i works</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <span class="mt-3 namez">Gimp</span>
+                    <i class="fa fa-picture-o" aria-hidden="true"></i></br>
+                    <span class="mt-3 namez"><strong>Gimp</strong<</span>
                     <p class="pb-5">Able to simply manipulate or edit images using Gimp</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <span class="mt-3 namez">Back End</span>
+                    <i class="fa fa-cog" aria-hidden="true"></i></br>
+                    <span class="mt-3 namez"><strong>Back End</strong></span>
                     <p class="pb-5">Have enough experience with Java, to write intermediate code. Also had past experience with C++</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-bug"></i>
-                    <span class="mt-3 namez">Bug Fixing</span>
+                    <i class="fa fa-bug"></i></br>
+                    <span class="mt-3 namez"><strong>Bug Fixing</strong></span>
                     <p class="pb-5">Able to debug, find and resolve defects  that prevent correct operation within front end or back end codes</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <i class="fa fa-laptop"></i>
-                    <span class="mt-3 namez">Google'ing</span>
+                    <i class="fa fa-laptop"></i></br>
+                    <span class="mt-3 namez"><strong>Google'ing</strong></span>
                     <p class="pb-5">Always believed, the key to programming is the ability to search for information</p>
                 </div>
             </div>
@@ -382,13 +382,15 @@ Responsive
         </div>
 
         <div class="row pt-5">
-            <div class="col-md-6 p-0 my-3 mb-3">
+            <div class="col-md-5,5 p-0 mb-3">
                 <img class="img-fluid tabl filter" src="images/wiseteam.PNG" alt="Company WiseTeam website image">
                 <h3 class="pl-2 pt-3">WiseTeam</h3>
                 <span class="title pl-2">Client Project</span>
             </div>
-
-            <div class="col-md-6 p-0  my-3 mb-3">
+            
+            <div class="col-md-1"></div>
+            
+            <div class="col-md-5.5 p-0 mb-3">
                 <img class="img-fluid tabl filter" src="images/konsultacijos.PNG" alt="Company IK Consulting website image">
                 <h3 class="pl-2 pt-3">IK Consulting</h3>
                 <span class="title pl-2">Client Project</span>
