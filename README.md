@@ -404,7 +404,7 @@ Responsive
             <div class="col-md-2"></div>
 
             <div class="col-md-4 p-0 mb-3">
-                <img class="img-fluid tabl filter" src="images/lotr.png" alt=" College website image">
+                <img class="img-fluid tabl filter" src="images/lotr.PNG" alt=" College website image">
                 <h3 class="pl-2 pt-3">Review Actors</h3>
                 <span class="title pl-2">College Project</span>
             </div>
