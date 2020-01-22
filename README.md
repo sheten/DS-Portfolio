@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <title>DS Portfolio</title>
     <!-- Required meta tags -->
@@ -497,3 +498,4 @@ Responsive
         crossorigin="anonymous"></script>
 
 </body>
+</html
