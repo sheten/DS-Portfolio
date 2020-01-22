@@ -23,6 +23,10 @@ body{
     color: black;
 }
 
+.namez{
+    font-size: 12px;
+}
+
 .title{
     color: red;
 }
@@ -328,42 +332,42 @@ Responsive
             <div class="row">
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-html5" aria-hidden="true"></i>
-                    <span>HTML 5</span>
+                    <span class="mt-3 namez">HTML 5</span>
                     <p class="pb-5">Have advanced understand and ability to write code in HTML</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-css3"></i>
-                    <span>CSS 3</span>
+                    <span class="mt-3 namez">CSS 3</span>
                     <p class="pb-5">Cascading Style Sheet is where I feel like it's must to spend enought time as it is one of main reason why code looks great</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-code"></i>
-                    <span>JavaScript</span>
+                    <span class="mt-3 namez">JavaScript</span>
                     <p class="pb-5">Believe, that for web developer it's one of the most important things to know, so I spend most of my time to improve my JavaScript writing</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-bars"></i>
-                    <span>Bootstrap</span>
+                    <span class="mt-3 namez">Bootstrap</span>
                     <p class="pb-5">Have built few websites with bootstrap, so already have perception of how i works</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-picture-o" aria-hidden="true"></i>
-                    <span>Gimp</span>
+                    <span class="mt-3 namez">Gimp</span>
                     <p class="pb-5">Able to simply manipulate or edit images using Gimp</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-cog" aria-hidden="true"></i>
-                    <span>Back End</span>
+                    <span class="mt-3 namez">Back End</span>
                     <p class="pb-5">Have enough experience with Java, to write intermediate code. Also had past experience with C++</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-bug"></i>
-                    <span>Bug Fixing</span>
+                    <span class="mt-3 namez">Bug Fixing</span>
                     <p class="pb-5">Able to debug, find and resolve defects  that prevent correct operation within front end or back end codes</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-laptop"></i>
-                    <span>Google'ing</span>
+                    <span class="mt-3 namez">Google'ing</span>
                     <p class="pb-5">Always believed, the key to programming is the ability to search for information</p>
                 </div>
             </div>
