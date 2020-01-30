@@ -267,7 +267,7 @@ Responsive
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">ASSSSSSSSSSSSSSSSSSSSbout Us <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
@@ -294,6 +294,7 @@ Responsive
     <section class="home container">
         <div class="row mt-0">
             <div class="col-lg-6 mt-5 py-5 pl-5 centruoti">
+            <p>SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
                 <img class="animated zoomIn img-fluid profile" src="images/as.png" alt="Profile Picture">
             </div>
             <div class="col-lg-6 my-auto">
