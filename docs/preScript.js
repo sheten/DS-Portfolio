@@ -21,7 +21,7 @@ function timer(){
       }
       if(time < 0){
         clearInterval(x);
-        window.location.replace('http://daynys.com/');
+        window.location.replace('http://daynys.com/home.html');
       }
   },1000);
 }
