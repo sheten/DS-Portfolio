@@ -1,0 +1,292 @@
+/* 
+General Use 
+*/
+
+.centruoti{
+    text-align: center;
+}
+
+h1,h2,h3{
+    font-weight: 900;
+}
+
+h4,h5,h6{
+    font-weight: 700;
+}
+
+.row-smoke{
+    background-color: whitesmoke;
+}
+
+.tblue{
+    color: #007bff;
+}
+
+.tred{
+    color: black;
+}
+
+
+/* 
+Body and Background 
+*/
+
+
+.about{
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bodys {
+    background:url(../website/images/firstweb.PNG);
+    background-size: cover;
+    overflow: hidden;
+    position: absolute;
+    background-repeat: no-repeat;
+    width : 100%;
+    height: 100%;
+}
+
+.bluras {
+    background-image: url(../website/images/bbrick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.border1{
+    border: 1px solid grey;
+    border-radius: 5%;
+    height: 27%;
+    text-align: center;
+    font-size: 1.1vw;
+    left: 30%;
+    line-height: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    position: fixed;
+    width: 35%;
+}
+
+.hide{
+    display:none;
+}
+    
+.show{
+    display:block;
+}
+
+.profile{
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+.liner{
+    border-bottom: 1px solid #83F3ED;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+}
+
+
+/*
+BUTTONS
+*/
+
+
+.butonas{
+    border: 2px dotted rgb(115, 189, 105);
+    background-color: rgb(143, 172, 139);
+    color: rgb(240, 62, 62);
+    border-radius: 5%;
+}
+
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: #011627;
+    color: #011627 !important;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary:before{
+    content: '';
+    position: absolute;
+    background-color: rgb(221, 27, 27);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+
+.btn-secondary{
+    background: #011627 !important;
+    border-radius: 0;
+    border-color: #011627 !important;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(221, 27, 27) !important;
+}
+
+.btn-primary{
+    background-color: #83F3ED !important;
+    border-color: #83F3ED;
+    border-radius: 0 !important;
+    color: #011627 !important;
+}
+
+.btn-primary:hover{
+    background-color: rgb(221, 27, 27) !important;
+    color: #83F3ED !important;
+
+}
+
+/*
+Navbar
+*/
+
+.navbar{
+    background: #FFF;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-link,
+.navbar-brand{
+    color: #011627;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: #777;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+/*
+Call to action
+*/
+
+.call-to-action{
+    background: #011627;
+    color: #fafaff;
+}
+
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background: #83F3ED;
+}
+
+/*
+Services
+*/
+
+.services i{
+    font-size: 2rem;
+    color: #83F3ED;
+}
+
+
+.skillz{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.opas{
+    background-color: whitesmoke;
+    opacity: 0.92;
+}
+
+/*
+Portfolio
+*/
+.p-photo{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.p-photo:hover{
+    opacity: 0.2;
+}
+
+.tabl{
+    border: 1px solid #83F3ED;
+}
+
+/*
+Contact Us
+*/
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.maps-height{
+    height: 294px;
+}
+
+/*
+Footer
+*/
+
+.footer{
+    background-color: rgba(131, 243, 237, 0.3);
+    color: #e01818;
+}
+
+.footer a{
+    color: #83838f;
+}
+
+.footer p{
+    font-style: oblique;
+    font-size: 19px;
+}
+
+a:hover{
+    font-size: 1.5em;
+}
+
+.socialNav i{
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+/*
+Responsive
+*/
+
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .call-to-action .container{
+        width: 100% !important;
+    }
+}
