@@ -257,4 +257,11 @@ Responsive
     .call-to-action .container{
         width: 100% !important;
     }
+
+    .profile{
+        transform: translate(-4%, 0);
+        max-height: 400px;
+        max-width: 400px;
+        border-radius: 50px;
+    }
 }
