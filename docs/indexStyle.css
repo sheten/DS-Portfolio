@@ -40,16 +40,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.bodys {
-    background:url(../website/images/firstweb.PNG);
-    background-size: cover;
-    overflow: hidden;
-    position: absolute;
-    background-repeat: no-repeat;
-    width : 100%;
-    height: 100%;
-}
-
 .bluras {
     background-image: url(../website/images/bbrick.png);
     background-repeat: no-repeat;
