@@ -41,7 +41,7 @@ body{
 }
 
 .bluras {
-    background-image: url(../website/images/bbrick.PNG);
+    background-image: url(images/bbrick.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
