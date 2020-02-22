@@ -1,0 +1,134 @@
+/* 
+BODY 
+*/
+
+.bluras {
+    background-image: url(../website/images/bbrick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* 
+PAGE TEXT 
+*/
+
+.portfolio-text{
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-left: 4vw;
+}
+
+/* 
+IMAGES 
+*/
+
+.portfolio-image{
+    height: auto;
+    position: relative;
+    width: 85%;
+}
+
+/* 
+ROWS 
+*/
+
+.row-smoke{
+    background-color: whitesmoke;
+}
+
+.heading-line{
+    background-color: #83F3ED;
+    height: 3px;
+    width: 10%;
+}
+
+/* 
+SLIDER 
+*/
+
+.mySlides{
+    display: none;
+}
+
+/* 
+Slides Container 
+*/
+
+.slidesContainer{
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+}
+
+/* 
+Text of Sliders 
+*/
+
+.text{
+    background-color: rgba(131, 243, 237, 0.3);
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numberText{
+    background-color: rgba(131, 243, 237, 0.3);
+    color: #000000;
+    font-size: 12px;
+    padding: 4px 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* 
+The Dots 
+*/
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin:  0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active{
+    background-color: rgb(131, 243, 237);
+}
+
+/* 
+Fading animation 
+*/
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.3s;
+    animation-name: fade;
+    animation-duration: 3.3s;
+}
+
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to{opacity: 1}
+}
+
+/*
+Responsive 
+*/
+
+@media only screen and (max-width: 360px) {
+    .text {font-size: 11px;}
+}
