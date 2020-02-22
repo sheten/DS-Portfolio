@@ -1,0 +1,107 @@
+/*
+Page Background
+*/
+
+.bluras{
+  background-color: rgb(29, 27, 27);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+
+}
+
+.bodys {
+  background:url(../website/images/firstweb.PNG);
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+  background-repeat: no-repeat;
+  width : 100%;
+  height: 100%;
+}
+
+.hide{
+  display:none;
+}
+  
+.show{
+  display: block;
+}
+
+/* 
+First Website Screen
+*/
+
+.butonas{
+    border: 2px dotted rgb(115, 189, 105);
+    background-color: rgb(143, 172, 139);
+    color: rgb(240, 62, 62);
+    border-radius: 5%;
+}
+
+.border1{
+  border: 1px solid grey;
+  border-radius: 5%;
+  height: 27%;
+  text-align: center;
+  font-size: 1.1vw;
+  left: 30%;
+  line-height: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+  position: fixed;
+  width: 35%;
+}
+
+/* 
+Timer Screen
+*/
+
+.container{
+  border: 5px solid #83F3ED;
+  border-radius: 50%;
+  height: 35vw;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 35vw;
+}
+
+.container #timerTitle {
+  color: #83F3ED;;
+  font-size: 2vw;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 46%;
+  width: 100%;
+}
+
+.container #timer {
+  color: #83F3ED;;
+  font-size: 1.8vw;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#signature .copyright{
+  bottom: 10px;
+  color: aqua;
+  left: 20px;
+  position: absolute;
+}
+
+#signature{
+  height: 100vh !important;
+  position: relative;
+  z-index: -1;
+}
+
