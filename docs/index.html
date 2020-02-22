@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="preScript.js"></script>
 </head>
 
-<body>
+<body class="bodys">
     <!--
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -53,8 +54,14 @@
         </div>
     </nav>
     -->
-
+    <div class="centruoti border1" id="testas2">
+        <br><br>
+        <p><strong>This is my First Website</strong><br><br>
+        To check my Progress and Portfolio, press the button below</p><br>
+        <button class="butonas" onclick="block_none(); exampleFunction();">Check Out</button>
+    </div>
     <!--Home-->
+    <div id="content" class="hide">
     <section class="home container">
         <div class="row mt-0">
             <div class="col-lg-6 mt-5 py-5 pl-5 centruoti">
@@ -65,7 +72,7 @@
                     <div class="home-content offset-lg-1 col-lg-10 overflow-hidden">
                         <h1 class="animated slideInLeft delay-1s pb-3 tblue"><em>Dziugas Sablauskas</em></h1>
                         <p class="animated slideInLeft delay-2s pb-3 tred"><strong>Hi,</strong> I am an IT Management for Business student in Glasgow Caledonian University <i class="fa fa-university" aria-hidden="true"></i><br><br>
-                        In studies we are introduced with IT widely, but mostly I like Web development and this is where I spend part of my free time. I've made few Web projects for companies and ofcourse had some of them built for studies or myself.</p>
+                        My new desire is to increase knowledge and skills in programming by having real job experience in web development and design</p>
                         <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary tred" onclick="window.location.href = 'about.html';">Read More</button>
                         <button class="animated zoomIn delay-3s btn btn-lg btn-secondary tblue" onclick="window.location.href = 'contact.html';">Contact Me</button>
                     </div>
@@ -87,9 +94,9 @@
     //-->
 
     <!--Services-->
-    <section class="services opas">
+    <section class="services opas centruoti">
         <div class="text-center py-5">
-            <h1 class="py-3 tred">Skills</h1>
+            <h1 class="py-3 tred"> My Skills</h1>
             <div class="mx-auto heading-line"></div>
         </div>
         <div class="container">
@@ -148,11 +155,11 @@
         <div class="row pt-5">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/wiseteam.PNG" alt="Company WiseTeam website image">
+                    <div class="col-md-2"></div>
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="WT.html"><img class="p-photo tabl" src="images/wiseteam.PNG" alt="Company WiseTeam website image"></a>
                             <h3 class="pl-2 pt-3">WiseTeam</h3>
-                            <span class="title pl-2">Client Project</span>
+                            <span class="tblue pl-2">Client Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -161,12 +168,12 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/konsultacijos.PNG"alt="Company IK Consulting website image">
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="IK.html"><img class="p-photo tabl" src="images/konsultacijos.PNG"alt="Company IK Consulting website image"></a>
                             <h3 class="pl-2 pt-3">IK Consulting</h3>
-                            <span class="title pl-2">Client Project</span>
+                            <span class="tblue pl-2">Client Project</span>
                         </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
@@ -174,11 +181,11 @@
         <div class="row pt-5">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/softconsulting.PNG" alt="Soft Consulting website image">
+                    <div class="col-md-2"></div>
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="SC.html"><img class="p-photo tabl" src="images/softconsulting.PNG" alt="Soft Consulting website image"></a>
                             <h3 class="pl-2 pt-3">Soft Consulting</h3>
-                            <span class="title pl-2">Client Project</span>
+                            <span class="tblue pl-2">Client Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -187,12 +194,12 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/lotr.png"alt=" College website image">
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="lotr.html"><img class="p-photo tabl" src="images/lotr.png"alt=" College website image"></a>
                             <h3 class="pl-2 pt-3">Review Actors</h3>
-                            <span class="title pl-2">College Project</span>
+                            <span class="tblue pl-2">College Project</span>
                         </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
@@ -200,11 +207,11 @@
         <div class="row pt-5">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/firstweb.PNG" alt="Dziugas first website image">
+                    <div class="col-md-2"></div>
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="FW.html"><img class="p-photo tabl" src="images/firstweb.PNG" alt="Dziugas first website image"></a>
                             <h3 class="pl-2 pt-3">First Website</h3>
-                            <span class="title pl-2">College Project</span>
+                            <span class="tblue pl-2">College Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -213,12 +220,12 @@
             <div class="col-md-6">
                 <div class="row">
                     <div class="col-md-1"></div>
-                        <div class="col-md-10 p-0 mb-3">
-                            <img class="img-fluid tabl" src="images/fire-cracker-spark-in-night-time-photography-668254.jpg" alt=" Personal website image">
-                            <h3 class="pl-2 pt-3">Grozio Studija</h3>
-                            <span class="title pl-2">Personal Project</span>
+                        <div class="col-md-9 p-0 mb-3">
+                            <a href="GS.html"><img class="p-photo tabl" src="images/fire-cracker-spark-in-night-time-photography-668254.jpg" alt=" Personal website image"></a>
+                            <h3 class="pl-2 pt-3">Under Construction</h3>
+                            <span class="tblue pl-2">Personal Project</span>
                         </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
@@ -260,11 +267,10 @@
     </section>
     //-->
 
-
     <!--Footer-->
     <footer class="footer mt-5">
             <div class="text-center py-2">
-                <h3 class="py-3">DS-Projects</h3>
+                <h3 class="py-3 tblue">DS-Projects</h3>
                 <div class="mx-auto heading-line"></div>
             </div>
             <div class="copyright text-center py-3 text-muted">
@@ -287,7 +293,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+</div>
 </body>
 
 </html>
