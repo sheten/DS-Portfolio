@@ -13,7 +13,7 @@ Page Background
 }
 
 .bodys {
-  background:url(../website/images/firstweb.PNG);
+  background:url(images/firstweb.PNG);
   background-size: cover;
   overflow: hidden;
   position: absolute;
