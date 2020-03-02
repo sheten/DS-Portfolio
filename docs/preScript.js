@@ -11,7 +11,7 @@ function block_none(){
 
 //Timer Script
 function timer(){
-  var time=4;
+  var time=2;
   var x = setInterval(function(){
       document.getElementById("timer").innerHTML= "in "+time+" Seconds";
       time=time-1;
