@@ -32,20 +32,16 @@ Body and Background
 */
 
 
-.about{
-    background-color: rgba(245, 245, 245, 0.5);
-}
-
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 .bluras {
-    background-image: url(images/bbrick.png);
+    background-attachment: fixed;
+    background-image: url(../website/images/bbrick.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -57,10 +53,105 @@ body{
     border-radius: 50px;
 }
 
-.liner{
-    border-bottom: 1px solid #83F3ED;
-    padding-bottom: 15px;
-    margin-bottom: 0;
+/*
+Navigation Section
+*/
+
+nav{
+    background: rgb(10, 48, 78);
+    height: 10vh;
+    width: 100%;
+}
+.logo{
+    float: left;
+    height: 9vh;
+    line-height: 80px;
+    margin-top: 0.2vh;
+    padding: 0 0 0 4vh;
+}
+nav ul{
+    float: right;
+    margin-right: 5vh;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px;
+}
+nav ul li a{
+    border-radius: 3px;
+    color: #007bff;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 13px;
+}
+
+a.active{
+    color: whitesmoke;
+}
+a.active,a:hover{
+    background: rgba(131, 243, 237, 0.6);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#navbar{
+    overflow: hidden;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+@media (max-width: 952px){
+    .logo{
+        padding-left: 1vh;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        background: #9fafc0;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        top: 80px;
+        padding: 0;
+        position: fixed;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #007bff;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
 
 
@@ -219,12 +310,15 @@ Footer
 */
 
 .footer{
-    background-color: rgba(131, 243, 237, 0.3);
-    color: #e01818;
+    background-color: rgba(19, 68, 109, 0.6);
+}
+
+.footerLogo{
+    height: 12vh;
 }
 
 .footer a{
-    color: #83838f;
+    color: #202083;
 }
 
 .footer p{
@@ -240,6 +334,28 @@ a:hover{
     margin-left: 25px;
     margin-right: 15px;
     margin-top: 2px;
+}
+
+@media (max-width: 952px){
+    .footerLogo{
+        height: 8vh;
+        margin: 0;
+    }
+    .footer p{
+        font-style: oblique;
+        font-size: 15px;
+        margin: 0 3px 0 3px;
+    }
+    .heading-line{
+        height: 1px;
+        margin: 0;
+        padding: 0;
+    }
+    .socialNav i{
+        margin-left: 25px;
+        margin-right: 15px;
+        margin-top: 1vh;
+    }
 }
 
 /*
