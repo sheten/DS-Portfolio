@@ -10,8 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
 
     <link rel="stylesheet" href="indexStyle.css">
@@ -19,45 +19,24 @@
 </head>
 
 <body class="bluras">
-    <!--
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">DS-P</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
-                <ul class="nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn-outline-secondary" href="#">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav class="sticky" id="navbar" style="z-index: 1;">
+        <input type="checkbox" id="check">
+        <label class="checkbtn" for="check">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo"><a href="home.html"><img class="logo" src="images/logoB.png" alt="logo"></a></label>
+        <ul>
+            <li><a class="active" href="contact.html">Contact Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
     </nav>
-    -->
     
     <!--Home-->
     <div>
-    <section class="home container">
+    <div style="height: 10vh; position: relative;"></div>
+    <section class="container" style="position: relative;">
         <div class="row mt-0">
             <div class="col-lg-6 mt-5 py-5 pl-5 ok">
                 <img class="animated zoomIn profile" src="images/as.png" alt="Profile Picture">
@@ -89,7 +68,7 @@
     //-->
 
     <!--Services-->
-    <section class="services opas centruoti">
+    <section class="services opas centruoti" id="skills">
         <div class="text-center py-5">
             <h1 class="py-3 tred"> My Skills</h1>
             <div class="mx-auto heading-line"></div>
@@ -127,7 +106,7 @@
                     <p class="pb-5">Have enough experience with Java, to write intermediate code. Also had past experience with C++</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <img style="width: 34px; height: 32px; " src="images/Jquery.png" alt="jQuery"><br>
+                    <img style="width: 34px; height: 32px; " src="../website/images/jquery.png" alt="jQuery"><br>
                     <span class="mt-10 skillz">JQuery</span><br><br>
                     <p class="pb-5">Have enough knowledge to read and write out JQuery methods, effects or events.</p>
                 </div>
@@ -145,13 +124,13 @@
                     <i class="fa fa-laptop"></i><br>
                     <span class="mt-10 skillz">Google'ing</span><br><br>
                     <p class="pb-5">Always believed, the key to programming is the ability to search for information</p>
-                </div>
+                </div>                                                    
             </div>
         </div>
     </section>
 
     <!--Portfolio-->
-    <section class="portfolio container-fluid opas">
+    <section class="portfolio container-fluid opas" id="portfolio">
         <div class="text-center py-5">
             <h1 class="py-3 tred">Portfolio</h1>
             <div class="mx-auto heading-line"></div>
@@ -226,7 +205,7 @@
                 <div class="row">
                     <div class="col-md-1"></div>
                         <div class="col-md-9 p-0 mb-3">
-                            <a href="GB.html"><img class="p-photo tabl" src="images/grey-t.PNG" alt=" Personal website image"></a>
+                            <a href="GS.html"><img class="p-photo tabl" src="images/grey-t.PNG" alt=" Personal website image"></a>
                             <h3 class="pl-2 pt-3">Grey-Brain</h3>
                             <span class="tblue pl-2">Personal Project</span>
                         </div>
@@ -273,13 +252,13 @@
     //-->
 
     <!--Footer-->
-    <footer class="footer mt-5">
+    <footer class="footer">
             <div class="text-center py-2">
-                <h3 class="py-3 tblue">DS-Projects</h3>
+                <img class="py-3 footerLogo" src="images/LogoB.png" alt="logo"></img>
                 <div class="mx-auto heading-line"></div>
             </div>
-            <div class="copyright text-center py-3 text-muted">
-                <p><b>Always Seeking to Learn More</b></p>
+            <div class="text-center py-3">
+                <p style="color: #202083;"><b>I am ready to learn more and become a part of something bigger</b></p>
                 <div class="socialNav">
                     <a href="https://www.facebook.com/profile.php?id=100007791466332" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/sablauskas.cia/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
