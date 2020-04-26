@@ -38,7 +38,7 @@ body{
 
 .bluras {
     background-attachment: fixed;
-    background-image: url(images/bbrick.png);
+    background-image: url(../website/images/bbrick.PNG);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -82,15 +82,16 @@ nav ul li a{
     border-radius: 3px;
     color: #007bff;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 480;
     text-transform: uppercase;
     padding: 7px 13px;
 }
 
-a.active{
-    color: whitesmoke;
+nav a.active{
+    background: rgba(131, 243, 237, 0.1);
+    color: rgba(131, 243, 237, 0.8);
 }
-a.active,a:hover{
+nav a:hover{
     background: rgba(131, 243, 237, 0.6);
     transition: .5s;
 }
@@ -132,7 +133,7 @@ a.active,a:hover{
         left: -100%;
         text-align: center;
         transition: .5s;
-        top: 80px;
+        top: 10%;
         padding: 0;
         position: fixed;
         width: 100%;
@@ -145,7 +146,13 @@ a.active,a:hover{
     nav ul li a{
         font-size: 20px;
     }
-    a:hover, a.active{
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    nav a:hover, a.active{
         background: none;
         color: #007bff;
     }
@@ -178,7 +185,7 @@ BUTTONS
 .btn-outline-secondary:before{
     content: '';
     position: absolute;
-    background-color: rgb(221, 27, 27);
+    background-color: rgb(240, 65, 109) !important;
     top: 0;
     left: 0;
     height: 100%;
@@ -198,7 +205,7 @@ BUTTONS
 }
 
 .btn-secondary:hover{
-    background-color: rgb(221, 27, 27) !important;
+    background-color: rgb(240, 65, 109) !important;
 }
 
 .btn-primary{
@@ -215,29 +222,6 @@ BUTTONS
 }
 
 /*
-Navbar
-*/
-
-.navbar{
-    background: #FFF;
-    border-bottom: 1px solid #eee;
-}
-
-.nav-link,
-.navbar-brand{
-    color: #011627;
-}
-
-.nav-link:hover,
-.navbar-brand:hover{
-    color: #777;
-}
-
-.navbar-brand{
-    font-size: 1.8rem;
-}
-
-/*
 Call to action
 */
 
@@ -248,7 +232,7 @@ Call to action
 
 .heading-line{
     height: 3px;
-    width: 10%;
+    width: 12%;
     background: #83F3ED;
 }
 
@@ -287,6 +271,7 @@ Portfolio
 
 .tabl{
     border: 1px solid #83F3ED;
+    border-radius: 5%;
 }
 
 /*
@@ -309,7 +294,7 @@ iframe {
 Footer
 */
 
-.footer{
+footer{
     background-color: rgba(19, 68, 109, 0.6);
 }
 
@@ -317,20 +302,20 @@ Footer
     height: 12vh;
 }
 
-.footer a{
+footer a{
     color: #202083;
 }
 
-.footer p{
+footer p{
     font-style: oblique;
     font-size: 19px;
 }
 
-a:hover{
+footer a:hover{
     font-size: 1.5em;
 }
 
-.socialNav i{
+footer i{
     margin-left: 25px;
     margin-right: 15px;
     margin-top: 2px;
@@ -341,7 +326,7 @@ a:hover{
         height: 8vh;
         margin: 0;
     }
-    .footer p{
+    footer p{
         font-style: oblique;
         font-size: 15px;
         margin: 0 3px 0 3px;
@@ -351,7 +336,7 @@ a:hover{
         margin: 0;
         padding: 0;
     }
-    .socialNav i{
+    .socialnav i{
         margin-left: 25px;
         margin-right: 15px;
         margin-top: 1vh;
@@ -363,13 +348,6 @@ Responsive
 */
 
 @media(max-width: 900px){
-    .navbar .nav-item{
-        display: block;
-        width: 100%;
-        padding: 10px 0px;
-        text-align: center;
-    }
-
     .call-to-action .container{
         width: 100% !important;
     }
