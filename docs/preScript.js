@@ -33,7 +33,7 @@ function timer(){
       }
       if(time < 0){
         clearInterval(x);
-        window.location.replace('http://daynys.com/home.html/');
+        window.location.replace('http://daynys.com/home.html');
       }
   },1000);
 }
