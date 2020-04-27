@@ -19,53 +19,61 @@
 </head>
 
 <body class="bluras">
+    <!--Navigation-->
     <nav class="sticky" id="navbar" style="z-index: 1;">
         <input type="checkbox" id="check">
         <label class="checkbtn" for="check">
-            <i class="fa fa-bars"></i>
+            <div id="Hamburger" class="menu-btn" onclick="Hamburger();">
+                <div class="menu-btn_burger"></div>
+            </div>
         </label>
-        <label class="logo"><a href="home.html"><img class="logo" src="images/LogoB.png" alt="logo"></a></label>
+        <label class="logo"><a href="home.html"><img class="logo" src="images/logoB.png" alt="logo"></a></label>
         <ul>
-            <li><a class="active" href="contact.html">Contact Me</a></li>
+            <li id="top-nav-li"><a href="index.html">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="about.html">About Me</a></li>
+            <li><a href="#portfolio">Works</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100007791466332" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/sablauskas.cia/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/dziugas-sablauskas-933417170/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a href="mailto:blauskas@gmail.com?Subject=Regarding%20the%20job%20You%20search" target="_top"><i class="fa fa-envelope" aria-hidden="true" id="Gmail-Icon"></i></a></li>
         </ul>
     </nav>
     
-    <!--Home-->
+    <!--Top-Page-->
     <div>
+        <div class="row mt-0 top-page">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 mt-5">
+                <img class="top-level-logo" src="images/top-page-logo.png" alt="logo"><br>
+                <h1 style="color: rgb(204, 191, 191);">Hi, I am Dziugas Sablauskas</h1>
+                <h3 style="color: rgb(204, 191, 191); font-family: monospace;">Web Designer and <span class="red-line">Develo</span>per</h3>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <!--My Background-->
+    <div class="opas">
     <div style="height: 10vh; position: relative;"></div>
     <section class="container" style="position: relative;">
         <div class="row mt-0">
-            <div class="col-lg-6 mt-5 py-5 pl-5 ok">
+            <div class="col-lg-4 mt-5 py-5 pl-5">
                 <img class="animated zoomIn profile" src="images/as.png" alt="Profile Picture">
             </div>
-            <div class="col-lg-6 my-auto">
-                <div style="margin-bottom: 15px;" class="row">
-                    <div class="home-content offset-lg-1 col-lg-10 overflow-hidden">
-                        <h1 class="animated slideInLeft delay-1s pb-3 tblue"><em>Dziugas Sablauskas</em></h1>
-                        <p class="animated slideInLeft delay-2s pb-3 tred"><strong>Hi,</strong> I am an IT Management for Business student in Glasgow Caledonian University <i class="fa fa-university" aria-hidden="true"></i><br><br>
-                        My desire is to increase knowledge and skills in programming by having real job experience in web development and design</p>
-                        <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary tred" onclick="window.location.href = 'about.html';">Read More</button>
-                        <button class="animated zoomIn delay-3s btn btn-lg btn-secondary tblue" onclick="window.location.href = 'contact.html';">Contact Me</button>
+            <div class="col-lg-8 my-auto">
+                <div style="margin-bottom: 15px;" >
+                    <div class="home-content offset-lg-1 col-lg-12 overflow-hidden">
+                        <h1 class="animated  delay-1s pb-3 B-Blue"><em>Dziugas Sablauskas</em></h1>
+                        <p class="animated  delay-2s pb-3"><strong>Hi,</strong> I am an IT Management for Business student in Glasgow Caledonian University <i class="fa fa-university" aria-hidden="true"></i><br><br>
+                        My desire is to increase programming knowledge and skills by having real job experience in web development</p>
+                        <button class="animated zoomIn delay-3s btn btn-lg btn-outline-secondary" onclick="window.location.href = 'about.html';">Read More</button>
+                        <button class="animated zoomIn delay-3s btn btn-lg btn-secondary B-blue" onclick="window.location.href = 'contact.html';">Contact Me</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!--Call to action
-    <section class="call-to-action py-5">
-        <div class="container text-center w-50">
-            <h2 class="animated slideInDown py-3 tred">Call to action</h2>
-            <div class="mx-auto heading-line"></div>
-            <p class="py-3">dsf oijsdfi oidsfj odsi oifdso ids oijnawdn aw danwdo dwaoi mowadm awd wamod mowadimwad
-                oaiwmd owaimdomw fsosifd nmfd</p>
-            <button class="btn btn-lg btn-primary tblue">Learn more</button>
-        </div>
-    </section>
-    //-->
 
     <!--Services-->
     <section class="services opas centruoti" id="skills">
@@ -106,14 +114,14 @@
                     <p class="pb-5">Have enough experience with Java, to write intermediate code. Also had past experience with C++</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
-                    <img style="width: 34px; height: 32px; " src="../website/images/Jquery.png" alt="jQuery"><br>
+                    <img style="width: 34px; height: 32px; " src="images/jquery.png" alt="jQuery"><br>
                     <span class="mt-10 skillz">JQuery</span><br><br>
                     <p class="pb-5">Have enough knowledge to read and write out JQuery methods, effects or events.</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-database" aria-hidden="true"></i><br>
-                    <span class="mt-10 skillz">SQLite3</span><br><br>
-                    <p class="pb-5">In University we are taught to manipulate data using SQLite3.</p>
+                    <span class="mt-10 skillz">Databases</span><br><br>
+                    <p class="pb-5">In University we are taught to manipulate data using SQLite3, DerbyDB.</p>
                 </div>
                 <div class="wow animated zoomIn col-md-4 text-center">
                     <i class="fa fa-bug"></i><br>
@@ -143,7 +151,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="WT.html"><img class="p-photo tabl" src="images/wiseteam.PNG" alt="Company WiseTeam website image"></a>
                             <h3 class="pl-2 pt-3">WiseTeam</h3>
-                            <span class="tblue pl-2">Client Project</span>
+                            <span class="B-Blue pl-2">Client Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -155,7 +163,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="IK.html"><img class="p-photo tabl" src="images/konsultacijos.PNG"alt="Company IK Consulting website image"></a>
                             <h3 class="pl-2 pt-3">IK Consulting</h3>
-                            <span class="tblue pl-2">Client Project</span>
+                            <span class="B-Blue pl-2">Client Project</span>
                         </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -169,7 +177,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="SC.html"><img class="p-photo tabl" src="images/softconsulting.PNG" alt="Soft Consulting website image"></a>
                             <h3 class="pl-2 pt-3">Soft Consulting</h3>
-                            <span class="tblue pl-2">Client Project</span>
+                            <span class="B-Blue pl-2">Client Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -181,7 +189,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="lotr.html"><img class="p-photo tabl" src="images/lotr.PNG" alt=" College website image"></a>
                             <h3 class="pl-2 pt-3">Review Actors</h3>
-                            <span class="tblue pl-2">College Project</span>
+                            <span class="B-Blue pl-2">College Project</span>
                         </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -195,7 +203,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="FW.html"><img class="p-photo tabl" src="images/firstweb.PNG" alt="Dziugas first website image"></a>
                             <h3 class="pl-2 pt-3">First Website</h3>
-                            <span class="tblue pl-2">College Project</span>
+                            <span class="B-Blue pl-2">College Project</span>
                         </div>
                     <div class="col-md-1"></div>
                 </div>
@@ -207,7 +215,7 @@
                         <div class="col-md-9 p-0 mb-3">
                             <a href="GS.html"><img class="p-photo tabl" src="images/grey-t.PNG" alt=" Personal website image"></a>
                             <h3 class="pl-2 pt-3">Grey-Brain</h3>
-                            <span class="tblue pl-2">Personal Project</span>
+                            <span class="B-Blue pl-2">Personal Project</span>
                         </div>
                     <div class="col-md-2"></div>
                 </div>
@@ -215,57 +223,25 @@
         </div>
     </section>
 
-    <!--Contact Us
-    <section class="contact">
-        <div class="container">
-            <div class="text-center py-5">
-                <h2 class="py-3 tred">Contact Us</h2>
-                <div class="mx-auto heading-line"></div>
-            </div>
-
-            <div class="row tblue">
-                <div class="col-lg-6">
-                    <!--Google Map
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.7583810627384!2d25.180257315766674!3d54.713873979100306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd9225778aec4b%3A0xe4bf73afe85c55d!2s%C4%AEsruties%20g.%202%2C%20Vilnius%2006244!5e0!3m2!1sen!2slt!4v1576351027121!5m2!1sen!2slt"></iframe>                    
-                </div>
-                <form class="col-lg-6">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input id="email" class="form-control" type="email" aria-describedby="emailHint"
-                            placeholder="Enter email...">
-                        <small id="emailHint" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input id="name" class="form-control" type="name" placeholder="Enter name...">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" placeholder="Enter message..." rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-lg btn-outline-secondary">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-    //-->
-
     <!--Footer-->
-    <footer class="footer">
+    <footer>
             <div class="text-center py-2">
                 <img class="py-3 footerLogo" src="images/LogoB.png" alt="logo"></img>
                 <div class="mx-auto heading-line"></div>
             </div>
             <div class="text-center py-3">
-                <p style="color: #202083;"><b>I am ready to learn more and become a part of something bigger</b></p>
+                <p><b>I am ready to learn more and become a part of something bigger</b></p>
                 <div class="socialNav">
                     <a href="https://www.facebook.com/profile.php?id=100007791466332" target="_blank"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/sablauskas.cia/" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/dziugas-sablauskas-933417170/" target="_blank"> <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="mailto:blauskas@gmail.com?Subject=Regarding%20the%20job%20You%20search" target="_top"><i class="fa fa-envelope" aria-hidden="true" id="Gmail-Icon"></i></a>
                 </div>
             </div>
     </footer>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -277,7 +253,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</div>
 </body>
 
 </html>
