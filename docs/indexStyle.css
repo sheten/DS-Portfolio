@@ -14,19 +14,11 @@ h4,h5,h6{
     font-weight: 700;
 }
 
-.row-smoke{
-    background-color: whitesmoke;
-}
-
-.tblue{
+.B-Blue{
     color: #007bff;
 }
 
-.tred{
-    color: black;
-}
-
-
+  
 /* 
 Body and Background 
 */
@@ -53,6 +45,63 @@ body{
     border-radius: 50px;
 }
 
+/* 
+MENU BUTTON 
+*/
+
+.menu-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    height: 10vh;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger{
+    width: 4vh;
+    height: .45vh;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 5.6px rgba(0, 123, 255,.5);
+    text-align: start;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+    content: '';
+    position: absolute;
+    width: 5vh;
+    height: .45vh;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 5.6px rgba(0, 123, 255,.5);
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+    transform: translateY(-1.4vh);
+}
+.menu-btn_burger::after{
+    transform: translateY(1.4vh);
+}
+
+/* 
+BURGER ANIMATION 
+*/
+
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-150px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(105px, -105px);
+}
+.menu-btn.open .menu-btn_burger::after{
+    transform: rotate(-45deg) translate(105px, 105px);
+}
+
 /*
 Navigation Section
 */
@@ -70,29 +119,31 @@ nav{
     padding: 0 0 0 4vh;
 }
 nav ul{
-    float: right;
-    margin-right: 5vh;
+    background: rgb(10, 48, 78);
+    height: 100%;
+    right: -100%;
+    text-align: center;
+    transition: 1s;
+    top: 10%;
+    padding: 0;
+    position: fixed;
+    width: 30%;
 }
 nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0px;
+    display: block;
+    line-height: 9vh;
+    margin: 1vh 0;
 }
-nav ul li a{
-    border-radius: 3px;
+nav ul li a
+{
     color: #007bff;
-    font-size: 17px;
-    font-weight: 480;
-    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 680;
     padding: 7px 13px;
 }
-
-nav a.active{
-    background: rgba(131, 243, 237, 0.1);
-    color: rgba(131, 243, 237, 0.8);
-}
 nav a:hover{
-    background: rgba(131, 243, 237, 0.6);
+    color: rgba(131, 243, 237, 0.85);
+    text-decoration: none;
     transition: .5s;
 }
 .checkbtn{
@@ -102,7 +153,7 @@ nav a:hover{
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
-    display: none;
+    display: block;
 }
 #check{
     display: none;
@@ -114,6 +165,18 @@ nav a:hover{
     position: fixed;
     top: 0;
     width: 100%;
+}
+.navbar .nav-item{
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+#check:checked ~ ul{
+    right: 0;
+}
+#top-nav-li{
+    margin-top: 15vh;
 }
 @media (max-width: 952px){
     .logo{
@@ -128,7 +191,7 @@ nav a:hover{
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         background: #9fafc0;
         left: -100%;
         text-align: center;
@@ -152,7 +215,7 @@ nav a:hover{
         padding: 10px 0px;
         text-align: center;
     }
-    nav a:hover, a.active{
+    nav a:hover{
         background: none;
         color: #007bff;
     }
@@ -161,18 +224,27 @@ nav a:hover{
     }
 }
 
-
 /*
-BUTTONS
+Top-Level-Page
 */
 
-
-.butonas{
-    border: 2px dotted rgb(115, 189, 105);
-    background-color: rgb(143, 172, 139);
-    color: rgb(240, 62, 62);
-    border-radius: 5%;
+.top-page{
+    background-image: url(images/top-page.jpg);
+    height: 100vh;
 }
+
+.top-level-logo{
+    margin-top: 15vh;
+}
+
+.red-line{
+    border-bottom: 2px solid #007bff;
+}
+
+/*
+PROFILE BUTTONS
+*/
+
 
 .btn-outline-secondary{
     background-color: transparent !important;
@@ -183,12 +255,13 @@ BUTTONS
 }
 
 .btn-outline-secondary:before{
-    content: '';
-    position: absolute;
     background-color: rgb(240, 65, 109) !important;
-    top: 0;
-    left: 0;
+    color: #011627 !important;
+    content: '';
     height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 0%;
     z-index: -1;
     transition: 0.5s;
@@ -208,19 +281,6 @@ BUTTONS
     background-color: rgb(240, 65, 109) !important;
 }
 
-.btn-primary{
-    background-color: #83F3ED !important;
-    border-color: #83F3ED;
-    border-radius: 0 !important;
-    color: #011627 !important;
-}
-
-.btn-primary:hover{
-    background-color: rgb(221, 27, 27) !important;
-    color: #83F3ED !important;
-
-}
-
 /*
 Call to action
 */
@@ -233,7 +293,7 @@ Call to action
 .heading-line{
     height: 3px;
     width: 12%;
-    background: #83F3ED;
+    background: rgb(10, 48, 78);
 }
 
 /*
@@ -242,7 +302,7 @@ Services
 
 .services i{
     font-size: 2rem;
-    color: #83F3ED;
+    color: #007bff;
 }
 
 
@@ -270,8 +330,8 @@ Portfolio
 }
 
 .tabl{
-    border: 1px solid #83F3ED;
-    border-radius: 5%;
+    border: 1px solid rgb(10, 48, 78);
+    border-radius: 3%;
 }
 
 /*
@@ -295,7 +355,7 @@ Footer
 */
 
 footer{
-    background-color: rgba(19, 68, 109, 0.6);
+    background: rgba(10, 48, 78, 1) !important;
 }
 
 .footerLogo{
@@ -303,15 +363,21 @@ footer{
 }
 
 footer a{
-    color: #202083;
+    color: #007bff;
 }
 
 footer p{
-    font-style: oblique;
+    color: #007bff;
     font-size: 19px;
+    font-style: oblique;
+}
+
+footer .heading-line{
+    background-color: #007bff;
 }
 
 footer a:hover{
+    color: #007bff;
     font-size: 1.5em;
 }
 
@@ -331,7 +397,7 @@ footer i{
         font-size: 15px;
         margin: 0 3px 0 3px;
     }
-    .heading-line{
+    footer .heading-line{
         height: 1px;
         margin: 0;
         padding: 0;
@@ -353,9 +419,9 @@ Responsive
     }
 
     .profile{
+        border-radius: 50px;
         transform: translate(-4%, 0);
         max-height: 400px;
         max-width: 400px;
-        border-radius: 50px;
     }
 }
