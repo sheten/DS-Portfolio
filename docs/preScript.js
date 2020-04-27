@@ -23,7 +23,7 @@ function block_none(){
 
 //Timer Script
 function timer(){
-  var time=4;
+  var time=3;
   var x = setInterval(function(){
       document.getElementById("timer").innerHTML= "in "+time+" Seconds";
       time=time-1;
@@ -33,7 +33,7 @@ function timer(){
       }
       if(time < 0){
         clearInterval(x);
-        window.location.replace('http://daynys.com/');
+        window.location.replace('http://daynys.com/home.html/');
       }
   },1000);
 }
