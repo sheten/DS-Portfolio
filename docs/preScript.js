@@ -1,4 +1,16 @@
+// BURGER ANIMATION 
+
+function Hamburger() {
+    const menuBtn = document.querySelector('.menu-btn');
+    if(document.getElementById("Hamburger").classList.contains("open")){
+        menuBtn.classList.remove('open');
+    } else {
+        menuBtn.classList.add('open');
+    }
+}
+
 // Hiding Pre-Content
+
 function exampleFunction() {
     if(document.body.hasAttribute("class", "bodys")) 
     { document.body.setAttribute("class", "bluras"), document.getElementById("content").setAttribute("class", "show"); }
@@ -11,7 +23,7 @@ function block_none(){
 
 //Timer Script
 function timer(){
-  var time=2;
+  var time=4;
   var x = setInterval(function(){
       document.getElementById("timer").innerHTML= "in "+time+" Seconds";
       time=time-1;
@@ -21,7 +33,7 @@ function timer(){
       }
       if(time < 0){
         clearInterval(x);
-        window.location.replace('http://daynys.com/home.html');
+        window.location.replace('http://daynys.com/');
       }
   },1000);
 }
@@ -48,3 +60,4 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2500); //Change for 2.5 seconds
 }
+
