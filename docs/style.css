@@ -16,7 +16,7 @@ canvas#canvas {
 }
 
 body {
-  background-image: url(../heart.jpg);
+  background-image: url(heart.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
