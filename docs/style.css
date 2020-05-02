@@ -51,6 +51,7 @@ p {
 img {
   max-width: 100%;
   border-radius: 20%;
+  rotate: 90deg;
   max-height: 100%;
   display: block; /* remove extra space below image */
 }
