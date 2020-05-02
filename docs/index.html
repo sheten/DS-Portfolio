@@ -1,38 +1,72 @@
-<!DOCTYPE html>
-<meta lang="en">
+<!DOCTYPR html>
 
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Birthday Gift - CodeMasala</title>
 
-    <title>DS Portfolio</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Link CSS Style.css file-->
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
-
-    <link rel="stylesheet" href="preStyle.css">
-    <script src="preScript.js"></script>
-</head>
-
-<body class="bodys">
-    <div class="centruoti border1" id="testas2">
-        <p style="margin-top: 5px;"><strong>This is my First Website</strong></p>
-        <p>To check my Progress and Portfolio, press the button below</p>
-        <button class="butonas" onclick="block_none(); exampleFunction(); timer();">Check Out</button>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="moon">
+      <div class="crater1"></div>
+      <div class="crater2"></div>
+      <div class="crater3"></div>
     </div>
 
-    <div id="content" class="hide">
-        <div class="container">
-            <P id="timerTitle">Prepare to see the Progress</p><br><br>
-            <p class="timer" id="timer">in 3 Seconds</p>
+    <canvas id="canvas"></canvas>
+
+    <div id="sea"></div>
+    <div id="beach"></div>
+
+    <div id="merrywrap" class="merrywrap">
+      <div class="giftbox">
+        <div class="cover">
+          <div></div>
         </div>
-        <div id="signature">
-            <p class="copyright"> &copy Hand-craft by Dziugas Sablauskas</p>
+
+        <div class="box"></div>
+      </div>
+
+      <div class="icons">
+        <div class="row">
+          <span>S</span>
+          <span>u</span>
         </div>
+        <div class="row">
+          <span>M</span>
+          <span>a</span>
+          <span>m</span>
+          <span>o</span>
+          <span>s</span>
+        </div>
+
+        <div class="row">
+          <span>D</span>
+          <span>i</span>
+          <span>e</span>
+          <span>n</span>
+          <span>a</span>
+          <span>!</span>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="textas">
+      <p>
+        Mama,<br /><br />
+        Esu be galo laimingas tave turedamas !<br />
+        Su kiekviena diena suvokiu, kaip stipriai tave Myliu, esi man labai
+        brangi. Labai gera tureti tokia Šiltą ir Suprantančią Mamą<br /><br />
+        Aš tave Labai Myliu!<br /><br />
+        Linkiu Gražios Dienos!<br /><br /><br />
+      </p>
+      <br /><br />
+      <div class="bosx" id="buckis">
+        <img src="buckis.jpg" alt="" />
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
