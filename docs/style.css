@@ -58,7 +58,6 @@ img {
 }
 .giftbox {
   position: absolute;
-  overflow: hidden;
   cursor: pointer;
   width: 290px;
   height: 280px;
