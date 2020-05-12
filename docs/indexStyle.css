@@ -208,12 +208,13 @@ nav a:hover {
     display: block;
   }
   nav ul {
-    background: #9fafc0;
+    background: rgba(10, 48, 78, 0.7);
     left: -100%;
     text-align: center;
     transition: 0.5s;
     top: 10%;
     padding: 0;
+    margin: 0;
     position: fixed;
     width: 100%;
   }
