@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrukcijos</title>
+    
+    <script type="text/javascript">
+      function preventBack() { window.history.forward(); }
+      setTimeout("preventBack()", 0);
+      window.onunload = function () { null };
+  </script>
+  </head>
+  <style>
+    body {
+      min-height: 100vh;
+      overflow: scroll;
+      scroll-behavior: smooth;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 70%;
+      width: 85%;
+      margin: 0 auto;
+    }
+    .divas {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      height: 100%;
+    }
+    #title {
+      flex: 1;
+      font-size: 7vh;
+      font-weight: 600;
+    }
+    #content {
+      flex: 2;
+      font-size: 3vh;
+      font-weight: 250;
+    }
+    input {
+      background-color: black;
+      border-radius: 10%;
+      border: 2px solid black;
+      color: whitesmoke !important;
+      margin: 0, auto;
+      padding: 2vh;
+      transition: 1s;
+      font-size: 3vh;
+      font-weight: 400;
+      width: max-content;
+    }
+    input:hover {
+      background-color: whitesmoke;
+      border-radius: 10%;
+      color: black !important;
+      border: 5px solid black;
+    }
+    #button {
+      margin-top: 5vh;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="divas">
+        <p id="title">KAIP VISKAS VYKS?</p>
+        <p id="content">
+          Norint gauti dovaną reiks įveikti kelias kliūtis.<br/>
+          Viskas ko tau reikia yra tušinukas🖊, popierius📃, smegenys🧠 ir formulės📓.  <br/>
+          Privaloma naudotis kompiuteriu!💻<br/>
+          Tad judink šikniuką ir įsijunk kompiuką. 😉 <br/>
+          Visos formulės bus duotos, tik reikės pačiam išsiaiškinti kuriai kliūčiai, kokios formulės reikia.<br/>
+          Turėsi tik 5 gyvybes, kiek bus kliūčių negaliu pasakyti, sužinosi eigoje.<br/>
+          Įveikus kiekvieną kliūti gausi po vieną raidytę, pasižymėk jas, tau prireiks jų gale kliūčių.<br/>
+          Klausimų praleidinėti NEGALIMA!⛔️<br/>
+          Galite bandyti, vistiek grįšite prie kliūties.<br/>
+          Linkiu sėkmės ir ištvermės.<br/>
+          Laukiu 100!💯
+
+
+
+
+        </p>
+      </div>
+
+      <div id="button">
+        <input
+        type="button"
+        onclick="gyvybes(); location.href='http://daynys.com/1ne.html';"
+        value="Pradeti Klausimyna &#8594"
+      />
+      </div>
+    </div>
+    <script>
+      function gyvybes(){
+        localStorage.setItem("gyvybes", 5)
+      }
+    </script>
+  </body>
+</html>

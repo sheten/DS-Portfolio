@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-as Klausimas</title>
+    
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+</head>
+<style>
+    #topWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 95vh;
+    }
+    #life{
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        margin-top: 5vh;
+        align-items: center;
+        padding-bottom: 2vh ;
+        width: 85%;
+    }
+    #gyvybes{
+        border: 5px solid yellow;
+        display: flex;
+        height: max-content;
+        text-align: center;
+        justify-content: space-around;
+        padding: 1vh;
+        width: 30%;
+    }
+    #gyvybes li{
+        color: red;
+        list-style-type:none;
+        margin: auto;
+    }
+    .dot1{
+        display: flex;}
+    #gyvybes .dot{
+        background: #ffff0080;
+        border: 0.5vh solid palegoldenrod;
+        border-radius: 50%;
+        height: 4vh;
+        width: 4vh;
+    }
+    #text{
+        flex: 2;
+        width: 85%;
+    }
+    #bottom{
+        display: flex;
+        flex: 2.5;
+        width: 85%;
+    }
+    #ats{
+        flex: 1;
+    }
+    ul {
+        list-style-type:none;
+        display: flex;
+        flex-direction: column;
+        height: 15vh;
+    }
+    label{
+        flex: 1;
+    }
+    #button{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    #geraZinute{
+        color: rgb(14, 185, 14);
+        display: none;
+        font-size: larger;
+        height: 100%;
+        width: 100%;
+    }
+    #blogaZinute{
+        color: red;
+        display: none;
+        font-size: larger;
+        height: 100%;
+        width: 100%;
+    }
+    #wtfZinute{
+        color: purple;
+        display: none;
+        font-size: larger;
+        height: 100%;
+        width: 100%;
+    }
+    input {
+      background-color: black;
+      border-radius: 50%;
+      border: 2px solid black;
+      color: whitesmoke !important;
+      margin: 0, auto;
+      padding: 2vh;
+      transition: 1s;
+      font-size: 2vh;
+      font-weight: 300;
+      width: max-content;
+    }
+    input:hover {
+      background-color: whitesmoke;
+      border-radius: 15%;
+      border: 5px solid black;
+      color: black !important;
+      font-size: 2vh;
+      font-weight: 400;
+    }
+</style>
+<body  onload="javascript:gyvybiuCheck()">
+    <div id="topWrapper">
+        <div id="life">
+            <div>
+                <img src="Capture.PNG"/>
+            </div>
+            <div id="gyvybes">
+                <li>Gyvybes:</li>
+                <li id="dot1" class="dot"></li>
+                <li id="dot2" class="dot"></li>
+                <li id="dot3" class="dot"></li>
+                <li id="dot4" class="dot"></li>
+                <li id="dot5" class="dot"></li>
+            </div>
+        </div>
+
+        <div id="text">
+            6.	Per kiek laiko tėvelis nuplauks atstumą kurį gavo praeitame uždavinyje jei plauks pasroviui. Valties greitis 50 km/h, o upės 15 km/h.<br/>
+Jei nepamenate atstumo, apskaičiuokite dar kartą.<br/>
+Tėtis žvejodamas plaukia valtimi prieš srove 35 km/h greičiu, raskite atstuma kurį jis nuplaukia per 5 min.
+
+        </div>
+        <div id="bottom">
+            <div id="ats">
+                <h2>Atsakymai</h2>
+                <ul>
+                    <label><input type="radio" id="two" name="atsakymai"/>   163.4 s</label>
+                    <label><input type="radio" id="one" name="atsakymai"/>  161.5 s</label>
+                    <label><input type="radio" id="three" name="atsakymai"/>   159.4 s</label>
+                </ul>
+                <input type="button" onclick="stebeti()" value="Tikrinti Atsakyma" style="padding:1vh; border-radius: 10%;"/>
+            </div>
+
+            <div id="button">
+                <div id="blogaZinute">
+                    KUKU,<br>
+                    Smegenys dar nedirba<br>
+                    LIKO VIENA GYVYBE MAŽIAU, ATSARGIAI, GREIT JŲ NELIKS
+                </div>
+                <div id="geraZinute">
+                    ŠAUNUOLIS! TAIP IR TOLIAU!<br>
+                    Tavo gaunama raidytė yra '!'<br/>
+                    PASIŽYMĖK JĄ IR NEPAMESK
+
+                </div>
+                <div id="wtfZinute">
+                    NUNU<br>
+                    Kas čia per variantas? Greit spręskite!<br/>
+                    DOVANĄ MATYSITE KAIP MANE 
+                </div>
+
+                <input
+                type="button"
+                onclick="check()"
+                value="Kitas Klausimas &#8594"
+                />
+        </div>
+    </div>
+    <script>
+        var gyvybes = localStorage.getItem("gyvybes");
+        function gyvybiuCheck() {
+                console.log('pakrove')
+            for(var i = 1; i<6; i++){
+                var u = i;
+                if(u<=gyvybes){
+                console.log(i)
+                console.log(u)
+                    document.getElementById('dot'+u).style.display = "flex";
+                console.log('flex')
+                } else {
+                    document.getElementById('dot'+u).style.display = "none";
+                console.log('none')
+                }
+            }
+        }
+
+        function stebeti() {
+            if(document.getElementById('one').checked){
+                document.getElementById("geraZinute").style.display = "flex";
+                document.getElementById("blogaZinute").style.display = "none";
+                document.getElementById("wtfZinute").style.display = "none";
+                console.log('teisingai');
+            } else {
+                document.getElementById("geraZinute").style.display = "none";
+                document.getElementById("blogaZinute").style.display = "flex";
+                document.getElementById("wtfZinute").style.display = "none";
+                minusas();
+                console.log('neteisingai2');
+            }
+        }
+
+        function minusas(){
+                var list = document.getElementById("gyvybes");
+                var gyvybes = localStorage.getItem("gyvybes");
+                var minusas = gyvybes - 1;
+                if(minusas > 0) {
+                localStorage.setItem("gyvybes", minusas)
+                document.getElementById('dot'+ minusas).style.display = "none";
+                } else {
+                    location.href='http://daynys.com/pabaiga.html';
+                }
+            }
+
+        function check() {
+            if(document.getElementById("geraZinute").style.display == "flex"){
+                location.href='http://daynys.com/kodas.html';
+            } else {
+                document.getElementById("wtfZinute").style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>

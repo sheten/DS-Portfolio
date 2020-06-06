@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dovana</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    </script>
+  </head>
+  <style>
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .mainDiv {
+      text-align: center;
+      position: relative;
+      margin-bottom: 10vh;
+    }
+    #title {
+      font-size: 12vh;
+      font-weight: 600;
+    }
+    #content {
+      font-size: 3vh;
+      font-weight: 200;
+    }
+    input {
+      font-size: 4vh;
+      font-weight: 700;
+      color: whitesmoke !important;
+      margin: 0, auto;
+      background-color: black;
+      border-radius: 10%;
+      color: black;
+      border: 2px solid black;
+      transition: 1s;
+      padding: 3.7vh 6vh 3.7vh 6vh;
+    }
+    input:hover {
+      background-color: whitesmoke;
+      border-radius: 10%;
+      color: black !important;
+      border: 5px solid black;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="mainDiv">
+        <p id="title">Įvesk kodą</p>
+
+        <p id="content">
+          (Iš gautų raidžių sudėk žodį, įrašyk jį žemiau ir paspausk "GAUTI")
+        </p>
+
+        <input
+          id="kodas"
+          style="border-radius: 0; text-align: center;"
+          type="text"
+          placeholder="******"
+        />
+      </div>
+      <input
+        style="font-size: 3vh;"
+        type="button"
+        onClick="check()"
+        value="GAUTI"
+      />
+    </div>
+    <script>
+      function check() {
+        var x = document.getElementById("kodas").value;
+        if (x == "valio!") {
+          console.log(x);
+          location.href = "http://daynys.com/sveikinimas.html";
+        } else {
+          console.log(x);
+          alert("NETEISINGAS KODAS :(");
+        }
+      }
+    </script>
+  </body>
+</html>
